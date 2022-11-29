@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+</head>
+<body>
+    <h1>Habit Creator</h1>
+    <div class="habit-container"></div>
+    <button class="form-button" id="habit-form">+</button>
+    <form action="" id="create-habit" novalidate class="hide">
+        <div class='form-field'>
+            <label for='title'>Title</label>
+            <input type='text' id='title' name='title' maxlength="28" placeholder="Run 2 Minutes"required >
+            <small></small>
+        </div>
+        <div class='form-field'>
+            <label for='goal'>Goal</label>
+            <input type='text' id='goal' name='goal' maxlength="28" placeholder="Run 5k in under 30 min" required>
+            <small></small>
+        </div>
+        <div class="form-field">
+            <label for="perDay">How Many Times Per Day</label>
+            <input type="number" id="perDay" min="1" max="31" value="1">
+            <small></small>
+        </div>
+        <div class='form-field'>
+            <label for='dueDate'>What Days of The Week?</label>
+            <label for='monday'>Monday</label>
+            <input type='checkbox' id='monday' name='monday' class="checkbox">
+            <label for='tuesday'>Tuesday</label>
+            <input type='checkbox' id='tuesday' name='tuesday' class="checkbox">
+            <label for='wednesday'>Wednesday</label>
+            <input type='checkbox' id='wednesday' for='wednesday' class="checkbox">
+            <label for='thursday'>Thursday</label>
+            <input type='checkbox' id='thursday' name='thursday' class="checkbox">
+            <label for='friday'>Friday</label>
+            <input type='checkbox' id='friday' name='friday' class="checkbox">
+            <label for='saturday'>Saturday</label>
+            <input type='checkbox' id='saturday' name='saturday' class="checkbox">
+            <label for='sunday'>Sunday</label>
+            <input type='checkbox' id='sunday' name='sunday' class="checkbox">
+            <small></small>
+        </div>
+        <input type='submit' value='Save Habit' id="submit-button">
+    </form>
+    <div id="habit-container"></div>
+       
+</body>
+</html>
