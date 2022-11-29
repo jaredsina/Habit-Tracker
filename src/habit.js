@@ -1,10 +1,9 @@
 class Habit {
-  constructor(title, goal, dueDate, completions, color) {
+  constructor(title, goal, dueDate, completions) {
     this.title = title;
     this.goal = goal;
     this.dueDate = dueDate;
     this.completions = completions;
-    this.color = color;
   }
   getTitle() {
     return this.title;
@@ -17,9 +16,6 @@ class Habit {
   }
   getCompletions() {
     return this.completions;
-  }
-  getColor() {
-    return this.color;
   }
 }
 
